@@ -14,6 +14,7 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
+/* Cyberpunk Navigation */
 .cyber-nav {
     position: fixed;
     top: 0;
@@ -33,7 +34,14 @@ body {
     color: #d7ff3f;
     text-shadow: 0 0 8px #d7ff3f;
 }
-.nav-links { display: flex; gap: 35px; }
+.nav-logo span {
+    color: #fff;
+    text-shadow: 0 0 6px #7f5af0;
+}
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
 .nav-links a {
     color: #e6e6e6;
     text-transform: uppercase;
@@ -45,6 +53,7 @@ body {
     text-shadow: 0 0 10px #d7ff3f;
 }
 
+/* Page Layout */
 .section {
     max-width: 900px;
     margin: auto;
@@ -57,6 +66,7 @@ h1 {
     text-shadow: 0 0 10px #7f5af0;
 }
 
+/* Serpent Divider */
 .serpent-divider {
     width: 100%;
     height: 120px;
@@ -65,12 +75,33 @@ h1 {
     margin: 40px 0;
 }
 
+/* Contact Cards */
 .contact-card {
     background: #1a1a1f;
     padding: 25px;
     border-left: 4px solid #7f5af0;
     border-radius: 6px;
     margin-top: 20px;
+}
+
+/* Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #7f5af0;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #d7ff3f;
 }
 </style>
 </head>
@@ -80,10 +111,10 @@ h1 {
 <nav class="cyber-nav">
   <div class="nav-logo">MilaWorks<span>Studio</span></div>
   <div class="nav-links">
-    <a href="../index.html">Home</a>
-    <a href="../contact/contact.html">Contact</a>
-    <a href="../extras/extras.html">Extras</a>
-    <a href="../hifend/hifend.html">Media / Visuals</a>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="extras.html">Extras</a>
+    <a href="hifend.html">Media / Visuals</a>
   </div>
 </nav>
 
@@ -94,12 +125,22 @@ h1 {
 
     <div class="contact-card">
         <strong>Email:</strong><br>
-        <a href="mailto:hello@milaworks.example">hello@milaworks.example</a>
+        <a href="mailto:sideloadingmila@gmail.com">sideloadingmila@gmail.com</a>
     </div>
 
     <div class="contact-card">
         <strong>Social:</strong><br>
         Instagram • GitHub • RapFame • Discord
+    </div>
+
+    <div class="serpent-divider"></div>
+
+    <h2 style="font-family:'Monoton'; text-shadow:0 0 10px #7f5af0;">Gallery</h2>
+
+    <div class="gallery">
+        <img src="/attachments/eUD3r459vf5qLgkms6s1g.jpeg">
+        <img src="/attachments/ENchypk7SmzevRkB7b4EA.jpeg">
+        <img src="/attachments/JeW8xHPFM9m5ZYeMbMW1D.jpeg">
     </div>
 </div>
 

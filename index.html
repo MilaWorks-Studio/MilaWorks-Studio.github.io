@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mila — Developer Portfolio</title>
+    <title>MilaWorks-Studio</title>
+
+    <!-- Cyberpunk Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -12,16 +16,120 @@
             color: #e6e6e6;
         }
 
-        header {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #1a1a1f, #2a2a35);
+        /* Cyberpunk Navigation Bar */
+        .cyber-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(8, 8, 8, 0.85);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid #2a2a2a;
+            z-index: 999;
         }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+        .nav-logo {
+            font-family: 'Monoton', cursive;
+            font-size: 1.8rem;
+            letter-spacing: 3px;
+            color: #d7ff3f;
+            text-shadow: 0 0 8px #d7ff3f;
+        }
+
+        .nav-logo span {
+            color: #fff;
+            text-shadow: 0 0 6px #7f5af0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.95rem;
+            color: #e6e6e6;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: relative;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #d7ff3f;
+            text-shadow: 0 0 10px #d7ff3f;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #d7ff3f;
+            box-shadow: 0 0 6px #d7ff3f;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        header {
+            padding: 120px 20px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1f, #2a2a35);
+            position: relative;
+        }
+
+        .serpent-wrap {
+            position: relative;
+            display: inline-block;
+            padding-left: 80px;
+        }
+
+        .serpent-img {
+            position: absolute;
+            top: -30px;
+            left: -100px;
+            width: 260px;
+            opacity: 0.9;
+            transform: rotate(-25deg);
+            filter: drop-shadow(0 0 20px #7f5af0) brightness(1.2) saturate(1.3);
+            mix-blend-mode: lighten;
+            z-index: 1;
+        }
+
+        .graffiti-title {
+            font-family: 'Monoton', cursive;
+            font-size: 4rem;
+            letter-spacing: 4px;
+            color: #7f5af0;
+            text-shadow: 0 0 10px #7f5af0, 0 0 20px #5f3ac0, 0 0 40px #3f1ac0;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #e6e6e6;
+            font-weight: 300;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
         h2 {
@@ -31,28 +139,34 @@
             padding-left: 10px;
         }
 
-        p {
-            line-height: 1.6;
+        .about-me-text {
+            font-family: 'Orbitron', sans-serif;
             font-size: 1.1rem;
+            line-height: 1.7;
+            color: #cfcfcf;
+            text-shadow: 0 0 4px #7f5af0;
         }
 
-        .section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .skills-list, .projects-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .skills-list li, .projects-list li {
+        .skills-list li,
+        .projects-list li {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #cfcfcf;
             background: #1a1a1f;
             padding: 15px;
             margin: 10px 0;
             border-left: 4px solid #7f5af0;
             border-radius: 4px;
+            text-shadow: 0 0 4px #7f5af0;
+            transition: all 0.3s ease;
+        }
+
+        .skills-list li:hover,
+        .projects-list li:hover {
+            background: #2a2a35;
+            box-shadow: 0 0 10px #7f5af0;
+            transform: translateX(5px);
         }
 
         footer {
@@ -76,17 +190,33 @@
 </head>
 <body>
 
+<!-- Cyberpunk Navigation -->
+<nav class="cyber-nav">
+  <div class="nav-logo">MilaWorks<span>Studio</span></div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="extras.html">Extras</a>
+    <a href="hifend.html">Media / Visuals</a>
+  </div>
+</nav>
+
 <header>
-    <h1>Mila</h1>
-    <p>Web Developer • Android Modder • Digital Craftsman</p>
+    <div class="serpent-wrap">
+        <img src="https://ts3.mm.bing.net/th?id=OIP.ZZf7s6KnEMsMTA6x5_5O6QHaHa&pid=15.1&o=7&rm=3" 
+             alt="Cyberpunk Serpent" class="serpent-img">
+        <h1 class="graffiti-title">MilaWorks-Studio</h1>
+    </div>
+    <p class="tagline">Web Developer • Magician • Digital Craftsman</p>
 </header>
 
 <div class="section">
     <h2>About Me</h2>
-    <p>
-        I’m Mila — a web developer with a sharp technical instinct and a street‑smart approach to problem solving.
-        I work across web technologies, Android firmware, boot image repacking, and system‑level debugging.
-        I believe wisdom is power, transparency is strength, and every challenge is an opportunity to ascend.
+    <p class="about-me-text">
+        I’m Mila — a digital magician weaving code, creativity, and intuition into everything I build.  
+        I craft interfaces, engineer systems, and solve problems with a blend of logic and sorcery.  
+        MilaWorks‑Studio is where technology meets imagination — and where every project becomes a spell.
     </p>
 </div>
 
@@ -95,9 +225,8 @@
     <ul class="skills-list">
         <li>HTML, CSS, JavaScript</li>
         <li>Web Development & UI Crafting</li>
-        <li>Android Modding & Firmware Analysis</li>
+        <li>Android Firmware & System Debugging</li>
         <li>Boot Image Repacking (init_boot, kernel, AnyKernel3)</li>
-        <li>Debugging & System Troubleshooting</li>
         <li>Git, GitHub, Version Control</li>
     </ul>
 </div>
@@ -121,7 +250,7 @@
 </div>
 
 <footer>
-    © 2026 Mila — Crafted with precision and purpose.
+    © 2026 MilaWorks‑Studio — Crafted with precision and purpose.
 </footer>
 
 </body>
