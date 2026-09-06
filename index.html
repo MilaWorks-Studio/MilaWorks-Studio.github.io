@@ -3,27 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mila — Developer Portfolio</title>
-    <style> /* Cyberpunk Graffiti Font */
-	@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+    <title>MilaWorks-Studio</title>
 
-		.graffiti-title {
-			font-family: 'Monoton', cursive;
-			font-size: 4rem;
-			letter-spacing: 4px;
-			color: #7f5af0;
-			text-shadow: 0 0 10px #7f5af0, 0 0 20px #5f3ac0;
-			margin: 0;
-		}
+    <!-- Cyberpunk Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 
-		.tagline {
-			font-size: 1.2rem;
-			margin-top: 10px;
-			color: #e6e6e6;
-			font-weight: 300;
-			letter-spacing: 1px;
-		}
-
+    <style>
         body {
             margin: 0;
             font-family: "Segoe UI", sans-serif;
@@ -32,15 +17,50 @@
         }
 
         header {
-            padding: 60px 20px;
+            padding: 80px 20px 40px;
             text-align: center;
             background: linear-gradient(135deg, #1a1a1f, #2a2a35);
+            position: relative;
         }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+        /* Graffiti Cyberpunk Title */
+        .graffiti-title {
+            font-family: 'Monoton', cursive;
+            font-size: 4rem;
+            letter-spacing: 4px;
+            color: #7f5af0;
+            text-shadow: 0 0 10px #7f5af0, 0 0 20px #5f3ac0;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+        }
+
+        /* Serpent Image */
+        .serpent-img {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-10deg);
+            width: 300px;
+            opacity: 0.9;
+            filter: drop-shadow(0 0 15px #7f5af0);
+            z-index: 1;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #e6e6e6;
+            font-weight: 300;
+            letter-spacing: 1px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
         h2 {
@@ -50,15 +70,13 @@
             padding-left: 10px;
         }
 
-        p {
-            line-height: 1.6;
+        /* Cyberpunk About Me Font */
+        .about-me-text {
+            font-family: 'Orbitron', sans-serif;
             font-size: 1.1rem;
-        }
-
-        .section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
+            line-height: 1.7;
+            color: #cfcfcf;
+            text-shadow: 0 0 4px #7f5af0;
         }
 
         .skills-list, .projects-list {
@@ -96,17 +114,17 @@
 <body>
 
 <header>
+    <img src="https://ts3.mm.bing.net/th?id=OIP.ZZf7s6KnEMsMTA6x5_5O6QHaHa&pid=15.1&o=7&rm=3" alt="Cyberpunk Serpent" class="serpent-img">
     <h1 class="graffiti-title">MilaWorks-Studio</h1>
     <p class="tagline">Web Developer • Magician • Digital Craftsman</p>
 </header>
 
-
 <div class="section">
     <h2>About Me</h2>
-    <p>
-        I’m Mila, a digital magician weaving code, creativity, and intuition into everything I build.
-		I craft interfaces, engineer systems, and solve problems with a blend of logic and sorcery.
-		MilaWorks‑Studio is where technology meets imagination — and where every project becomes a spell..
+    <p class="about-me-text">
+        I’m Mila — a digital magician weaving code, creativity, and intuition into everything I build.  
+        I craft interfaces, engineer systems, and solve problems with a blend of logic and sorcery.  
+        MilaWorks‑Studio is where technology meets imagination — and where every project becomes a spell.
     </p>
 </div>
 
@@ -115,8 +133,8 @@
     <ul class="skills-list">
         <li>HTML, CSS, JavaScript</li>
         <li>Web Development & UI Crafting</li>
+        <li>Android Firmware & System Debugging</li>
         <li>Boot Image Repacking (init_boot, kernel, AnyKernel3)</li>
-        <li>Debugging & System Troubleshooting</li>
         <li>Git, GitHub, Version Control</li>
     </ul>
 </div>
@@ -140,7 +158,7 @@
 </div>
 
 <footer>
-    © 2026 Mila — Crafted with precision and purpose.
+    © 2026 MilaWorks‑Studio — Crafted with precision and purpose.
 </footer>
 
 </body>
