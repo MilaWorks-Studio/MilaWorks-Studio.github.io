@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MilaWorks — Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: #0d0d0f;
+    color: #e6e6e6;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cyber-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(8, 8, 8, 0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #2a2a2a;
+    z-index: 999;
+}
+.nav-logo {
+    font-family: 'Monoton', cursive;
+    font-size: 1.8rem;
+    color: #d7ff3f;
+    text-shadow: 0 0 8px #d7ff3f;
+}
+.nav-links { display: flex; gap: 35px; }
+.nav-links a {
+    color: #e6e6e6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #d7ff3f;
+    text-shadow: 0 0 10px #d7ff3f;
+}
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 120px 20px 40px;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #7f5af0;
+}
+
+.serpent-divider {
+    width: 100%;
+    height: 120px;
+    background: url("https://ts3.mm.bing.net/th?id=OIP.ZZf7s6KnEMsMTA6x5_5O6QHaHa&pid=15.1&o=7&rm=3") center/contain no-repeat;
+    filter: drop-shadow(0 0 20px #7f5af0);
+    margin: 40px 0;
+}
+
+.contact-card {
+    background: #1a1a1f;
+    padding: 25px;
+    border-left: 4px solid #7f5af0;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="cyber-nav">
+  <div class="nav-logo">MilaWorks<span>Studio</span></div>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="../contact/contact.html">Contact</a>
+    <a href="../extras/extras.html">Extras</a>
+    <a href="../hifend/hifend.html">Media / Visuals</a>
+  </div>
+</nav>
+
+<div class="section">
+    <h1>Contact</h1>
+
+    <div class="serpent-divider"></div>
+
+    <div class="contact-card">
+        <strong>Email:</strong><br>
+        <a href="mailto:hello@milaworks.example">hello@milaworks.example</a>
+    </div>
+
+    <div class="contact-card">
+        <strong>Social:</strong><br>
+        Instagram • GitHub • RapFame • Discord
+    </div>
+</div>
+
+</body>
+</html>
