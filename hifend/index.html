@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mila Works — Hifend Studio</title>
+<meta name="description" content="Mila Works — Hifend Studio. A creative space for music, visuals, recording, and ideas.">
+<style>
+:root{--bg:#080808;--card:#121212;--text:#f5f5f5;--muted:#a4a4a4;--accent:#d7ff3f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;width:100%;z-index:10;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;background:rgba(8,8,8,.82);backdrop-filter:blur(12px)}
+.logo{font-weight:900;letter-spacing:.08em}.logo span{color:var(--accent)}
+nav .links{display:flex;gap:25px;font-size:14px;color:#ddd}
+.hero{min-height:100vh;padding:150px 7% 80px;display:flex;align-items:center;background:radial-gradient(circle at 80% 30%,#252d0b 0,transparent 32%),linear-gradient(135deg,#080808 55%,#101010)}
+.hero-content{max-width:850px}
+.kicker{color:var(--accent);font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(58px,10vw,140px);line-height:.86;letter-spacing:-.07em;text-transform:uppercase}
+.hero p{max-width:620px;margin:30px 0;color:#bbb;font-size:18px}
+.btn{display:inline-block;padding:15px 22px;background:var(--accent);color:#090909;font-weight:900;border-radius:999px;margin-right:10px}
+.btn.dark{background:transparent;color:#fff;border:1px solid #444}
+section{padding:100px 7%}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}
+h2{font-size:clamp(38px,6vw,72px);line-height:.95;letter-spacing:-.05em}
+.section-head p{max-width:420px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid #242424;border-radius:22px;padding:28px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between}
+.card .num{color:var(--accent);font-weight:900}.card h3{font-size:28px}.card p{color:var(--muted)}
+.work{background:#0e0e0e}
+.work-list{display:grid;gap:12px}.work-item{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid #292929}.work-item strong{font-size:22px}.work-item span{color:var(--muted)}
+.contact{background:var(--accent);color:#090909;border-radius:30px;margin:0 5% 70px;padding:70px 6%}.contact p{max-width:600px;margin:18px 0 28px}.contact .btn{background:#090909;color:#fff}
+footer{padding:35px 7%;display:flex;justify-content:space-between;color:#777;font-size:13px}
+@media(max-width:760px){nav .links{display:none}.grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:18px}.hero{padding-top:130px}footer{display:block}footer div+div{margin-top:10px}}
+/* Cyberpunk Navigation Bar */
+.cyber-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(8, 8, 8, 0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #2a2a2a;
+    z-index: 999;
+}
+
+.nav-logo {
+    font-family: 'Monoton', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    color: #d7ff3f;
+    text-shadow: 0 0 8px #d7ff3f;
+}
+
+.nav-logo span {
+    color: #fff;
+    text-shadow: 0 0 6px #7f5af0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.95rem;
+    color: #e6e6e6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Neon Hover Effect */
+.nav-links a:hover {
+    color: #d7ff3f;
+    text-shadow: 0 0 10px #d7ff3f;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #d7ff3f;
+    box-shadow: 0 0 6px #d7ff3f;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+<nav class="cyber-nav">
+  <div class="nav-logo">MilaWorks<span>Studio</span></div>
+
+  <div class="nav-links">
+    <a href="/index.html">Home</a>
+    <a href="/contact/">Contact</a>
+    <a href="/extras/">Extras</a>
+    <a href="/media/">Media / Visuals</a>
+    <a href="/hifend/">Hifend Studio</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="kicker">Mila Works / Hifend Studio</div>
+    <h1>Make it<br>sound<br>different.</h1>
+    <p>A modern creative studio built for recording, production, visuals, and original ideas. Turn raw inspiration into finished work.</p>
+    <a class="btn" href="#contact">Book the studio</a>
+    <a class="btn dark" href="#work">Explore work</a>
+  </div>
+</header>
+
+<section id="studio">
+  <div class="section-head">
+    <h2>Built for<br>creative work.</h2>
+    <p>Hifend Studio gives artists and creators a focused space to record, build, experiment, and bring projects across the finish line.</p>
+  </div>
+  <div class="grid">
+    <article class="card"><div class="num">01</div><div><h3>Recording</h3><p>Clean, focused sessions for vocals, songs, podcasts, and creative projects.</p></div></article>
+    <article class="card"><div class="num">02</div><div><h3>Production</h3><p>Develop the sound, arrangement, and atmosphere that makes a project stand out.</p></div></article>
+    <article class="card"><div class="num">03</div><div><h3>Creative</h3><p>A flexible home for visuals, concepts, collaboration, and new ideas.</p></div></article>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="section-head">
+    <h2>Selected<br>work.</h2>
+    <p>Recent releases, studio collaborations, and featured tracks.</p>
+  </div>
+
+  <div class="work-list">
+
+    <div class="work-item">
+      <strong>Kali Kid — “What’s a Light to the Sky”</strong>
+      <span>Single • 2026</span>
+    </div>
+    <img src="https://cdn-us-hot.rapfa.me/tracks/15987820/bcfd4696-3c33-4861-bfef-5a9ee09420bb_radio.png" 
+         alt="What's a Light to the Sky" 
+         style="width:120px;border-radius:12px;margin-bottom:20px;">
+
+    <div class="work-item">
+      <strong>Kali Kid — “Life is Hard”</strong>
+      <span>Single • 2026</span>
+    </div>
+    <img src="https://cdn-us-hot.rapfa.me/tracks/15987820/9d729ee4-e27b-4437-8873-01ae3454b6d8_radio.png" 
+         alt="Life is Hard" 
+         style="width:120px;border-radius:12px;margin-bottom:20px;">
+
+    <div class="work-item">
+      <strong>Kali Kid — “kalikidwest”</strong>
+      <span>Single • 2026</span>
+    </div>
+    <img src="https://cdn-us-hot.rapfa.me/tracks/15987820/23e79590-78c7-41f1-a1fc-0492e904c63a_radio.png" 
+         alt="kalikidwest" 
+         style="width:120px;border-radius:12px;margin-bottom:20px;">
+
+    <div class="work-item">
+      <strong>Kali Kid — “no name”</strong>
+      <span>Single • 2026</span>
+    </div>
+    <img src="https://cdn-us-hot.rapfa.me/tracks/15987820/b55b4c97-39b9-4a04-817b-b6ef6b9ebf03_radio.png" 
+         alt="no name" 
+         style="width:120px;border-radius:12px;margin-bottom:20px;">
+
+    <div class="work-item">
+      <strong>Featured Track</strong>
+      <span><a href="https://rapfame.app/tracks/24286084" target="_blank">Listen</a></span>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <div class="kicker">Start a project</div>
+  <h2>Let's make<br>something real.</h2>
+  <p>Ready to book Hifend Studio or talk about a project? Add your preferred contact details below.</p>
+  <a class="btn" href="mailto:sideloadingmila@gmail.com">sideloadingmila@gmail.com</a>
+</section>
+
+<footer>
+  <div>© 2026 Mila Works — Hifend Studio</div>
+  <div>Los Angeles • Music • Creative</div>
+</footer>
+</body>
+</html>
